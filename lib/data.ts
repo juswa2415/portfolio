@@ -68,7 +68,7 @@ export const projects = [
     stack: ["React", "TypeScript", "Node.js", "Billing", "Field Ops"],
     githubUrl: "https://github.com/juswa2415/nha-water-billing.git",
     liveUrl: "",
-    image: "/images/project-nha-water-billing.png",
+    image: "C:\Users\peria\Downloads\projects\nha-water-billing\sample-data\nha_pic.png",
     alt: "NHA Water Billing dashboard for community billing and payment tracking"
   },
   {
@@ -78,7 +78,7 @@ export const projects = [
     stack: ["Next.js", "TypeScript", "Local-first", "Credential Management"],
     githubUrl: "https://github.com/juswa2415/credix.git",
     liveUrl: "",
-    image: "/images/project-credix.png",
+    image: "C:\Users\peria\Downloads\projects\Credix\Credix_pic.png",
     alt: "Credix local credential management interface for household accounts"
   }
 ];
