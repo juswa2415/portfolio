@@ -2,7 +2,7 @@
 
 import { motion, useReducedMotion } from "framer-motion";
 import { ArrowRight, Download } from "lucide-react";
-import { heroRoles } from "@/lib/data";
+import { heroRoles, profileSnapshot } from "@/lib/data";
 import { TypewriterText } from "@/components/ui/typewriter-text";
 
 export function HeroSection() {
@@ -86,7 +86,7 @@ export function HeroSection() {
                   Focus Areas
                 </p>
                 <p className="mt-2 text-lg text-text">
-                  Full-stack apps, developer tooling, embedded-to-cloud workflows
+                  Full-stack products, finance tooling, and operations-focused interfaces
                 </p>
               </div>
               <div>
@@ -94,13 +94,13 @@ export function HeroSection() {
                   Current Goal
                 </p>
                 <p className="mt-2 text-lg text-text">
-                  Shipping polished projects that translate classroom fundamentals into production
-                  thinking.
+                  Tightening product polish, project accuracy, and internship-ready engineering
+                  depth.
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4 pt-4">
-                <Metric label="Projects Shipped" value="08+" />
-                <Metric label="Internship Focus" value="SWE" />
+                <Metric label="Projects Shipped" value={`0${profileSnapshot.projectCount}`} />
+                <Metric label="Internship Focus" value={profileSnapshot.internshipFocus} />
               </div>
             </div>
           </div>

@@ -55,24 +55,28 @@ export function ProjectsSection() {
                     <p className="mt-4 max-w-xl text-base leading-7 text-muted">{project.description}</p>
                   </div>
                   <div className="flex items-center gap-2">
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label={`View ${project.title} source code on GitHub`}
-                      className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border/70 bg-bg/30 text-text hover:border-accent/80 hover:text-accent"
-                    >
-                      <Github className="h-4 w-4" />
-                    </a>
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                      aria-label={`Open live demo for ${project.title}`}
-                      className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border/70 bg-bg/30 text-text hover:border-accent/80 hover:text-accent"
-                    >
-                      <ArrowUpRight className="h-4 w-4" />
-                    </a>
+                    {project.githubUrl ? (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`View ${project.title} source code on GitHub`}
+                        className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border/70 bg-bg/30 text-text hover:border-accent/80 hover:text-accent"
+                      >
+                        <Github className="h-4 w-4" />
+                      </a>
+                    ) : null}
+                    {project.liveUrl ? (
+                      <a
+                        href={project.liveUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label={`Open live demo for ${project.title}`}
+                        className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-border/70 bg-bg/30 text-text hover:border-accent/80 hover:text-accent"
+                      >
+                        <ArrowUpRight className="h-4 w-4" />
+                      </a>
+                    ) : null}
                   </div>
                 </div>
                 <div className="mt-6 flex flex-wrap gap-2">

@@ -20,25 +20,54 @@ export function PortfolioShell({ children }: PortfolioShellProps) {
       .map((item) => document.getElementById(item.id))
       .filter((section): section is HTMLElement => section !== null);
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    let ticking = false;
 
-        if (visible?.target.id) {
-          setActiveSection(visible.target.id);
-        }
-      },
-      {
-        rootMargin: "-35% 0px -45% 0px",
-        threshold: [0.2, 0.35, 0.6]
+    const updateActiveSection = () => {
+      const marker = window.innerHeight * 0.34;
+      const viewportBottom = window.innerHeight + window.scrollY;
+      const pageBottom = document.documentElement.scrollHeight - 8;
+
+      if (viewportBottom >= pageBottom) {
+        setActiveSection(navItems.at(-1)?.id ?? "contact");
+        ticking = false;
+        return;
       }
-    );
 
-    sections.forEach((section) => observer.observe(section));
+      let nextActiveSection = sections[0]?.id ?? "about";
 
-    return () => observer.disconnect();
+      for (const section of sections) {
+        const { top, bottom } = section.getBoundingClientRect();
+        if (top <= marker && bottom >= marker) {
+          nextActiveSection = section.id;
+          break;
+        }
+
+        if (top < marker) {
+          nextActiveSection = section.id;
+        }
+      }
+
+      setActiveSection(nextActiveSection);
+      ticking = false;
+    };
+
+    const requestUpdate = () => {
+      if (ticking) {
+        return;
+      }
+
+      ticking = true;
+      window.requestAnimationFrame(updateActiveSection);
+    };
+
+    requestUpdate();
+    window.addEventListener("scroll", requestUpdate, { passive: true });
+    window.addEventListener("resize", requestUpdate);
+
+    return () => {
+      window.removeEventListener("scroll", requestUpdate);
+      window.removeEventListener("resize", requestUpdate);
+    };
   }, []);
 
   useEffect(() => {

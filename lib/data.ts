@@ -11,6 +11,11 @@ export const heroRoles = [
   "Computer Engineering Student"
 ];
 
+export const profileSnapshot = {
+  projectCount: 4,
+  internshipFocus: "SWE"
+};
+
 export const aboutParagraphs = [
   "I am a Computer Engineering student who enjoys turning vague ideas into products that feel dependable, fast, and easy to use. My strongest work sits at the intersection of software engineering and systems thinking: building interfaces, APIs, and tooling that stay clean under real constraints.",
   "I am targeting Summer 2026 internships and entry-level roles where I can contribute across the stack, learn from strong engineering teams, and keep sharpening my foundations in full-stack development, cloud deployment, and practical problem solving."
@@ -23,48 +28,38 @@ export const skillGroups = [
   },
   {
     title: "Frameworks",
-    items: ["React", "Next.js", "Node.js", "Express", "Tailwind CSS", "Framer Motion"]
+    items: ["React", "Next.js", "Node.js", "Prisma", "Tailwind CSS", "Framer Motion"]
   },
   {
     title: "Tools",
-    items: ["Git", "Docker", "VS Code", "Postman", "Figma", "GitHub Actions"]
+    items: ["Git", "GitHub", "VS Code", "Postman", "Figma", "npm"]
   },
   {
     title: "Platforms",
-    items: ["Vercel", "AWS Basics", "Linux", "Firebase", "Supabase", "Arduino"]
+    items: ["Vercel", "PostgreSQL", "Auth.js", "Prisma", "Windows", "Linux"]
   }
 ];
 
 export const projects = [
   {
-    title: "PulseGrid",
+    title: "FinTrack",
     description:
-      "Built an IoT dashboard that aggregates live room temperature, humidity, and motion readings from ESP32 sensors into a responsive monitoring interface. Designed the data flow to surface anomalies quickly and reduce noisy updates with threshold-based alerts.",
-    stack: ["Next.js", "TypeScript", "MQTT", "Chart.js", "Supabase"],
-    githubUrl: "https://github.com/yourusername/pulsegrid",
-    liveUrl: "https://pulsegrid-demo.vercel.app",
+      "Built a personal finance tracker for monitoring expenses, income, budgets, recurring transactions, and savings goals in one workflow. The app pairs authenticated user dashboards with analytics, category management, CSV import support, and PDF-ready reporting for clearer day-to-day financial visibility.",
+    stack: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Auth.js", "Recharts"],
+    githubUrl: "https://github.com/juswa2415/fintrack",
+    liveUrl: "",
     image: "/images/project-pulsegrid.svg",
-    alt: "PulseGrid IoT sensor dashboard interface"
+    alt: "FinTrack personal finance dashboard interface"
   },
   {
-    title: "Patchnote CLI",
+    title: "BrewPOS",
     description:
-      "Created a developer CLI that scans conventional commits, groups release notes by change type, and outputs changelogs suitable for GitHub releases. Added configuration presets so small teams could adopt it without maintaining custom scripts.",
-    stack: ["Node.js", "TypeScript", "Commander", "Vitest", "npm"],
-    githubUrl: "https://github.com/yourusername/patchnote-cli",
-    liveUrl: "https://www.npmjs.com/package/patchnote-cli",
-    image: "/images/project-patchnote.svg",
-    alt: "Patchnote CLI terminal and release summary preview"
-  },
-  {
-    title: "LabLane",
-    description:
-      "Shipped a full-stack CRUD app for managing student project submissions, review status, and lab resources in one place. Focused on clean relational data modeling, optimistic UI updates, and role-based access for student and admin views.",
-    stack: ["Next.js", "Prisma", "PostgreSQL", "Clerk", "Vercel"],
-    githubUrl: "https://github.com/yourusername/lablane",
-    liveUrl: "https://lablane-demo.vercel.app",
+      "Designed a coffee shop POS system that goes beyond order-taking by connecting checkout flows with inventory tracking and back-office operations. It is positioned as an operations-focused tool for managing stock visibility, sales activity, and day-to-day cafe workflows from a single system.",
+    stack: ["POS", "Inventory", "Operations"],
+    githubUrl: "",
+    liveUrl: "",
     image: "/images/project-lablane.svg",
-    alt: "LabLane full-stack student project management app"
+    alt: "BrewPOS coffee shop point-of-sale and inventory management interface"
   }
 ];
 

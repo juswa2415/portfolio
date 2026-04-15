@@ -12,6 +12,9 @@ export function TypewriterText({ words }: TypewriterTextProps) {
   const [wordIndex, setWordIndex] = useState(0);
   const [displayText, setDisplayText] = useState(words[0] ?? "");
   const [isDeleting, setIsDeleting] = useState(false);
+  const longestWord = words.reduce((longest, word) =>
+    word.length > longest.length ? word : longest
+  , words[0] ?? "");
 
   useEffect(() => {
     if (reducedMotion) {
@@ -49,11 +52,17 @@ export function TypewriterText({ words }: TypewriterTextProps) {
   }, [displayText, isDeleting, reducedMotion, wordIndex, words]);
 
   return (
-    <span className="inline-flex min-h-[1.3em] items-center">
-      <span>{displayText}</span>
-      {!reducedMotion ? (
-        <span aria-hidden="true" className="ml-1 inline-block h-[1.1em] w-px animate-caret bg-accent" />
-      ) : null}
+    <span className="relative inline-grid min-h-[1.3em] items-center align-middle">
+      <span className="invisible whitespace-nowrap">{longestWord}</span>
+      <span className="absolute inset-0 inline-flex items-center whitespace-nowrap">
+        <span>{displayText}</span>
+        {!reducedMotion ? (
+          <span
+            aria-hidden="true"
+            className="ml-1 inline-block h-[1.1em] w-px animate-caret bg-accent"
+          />
+        ) : null}
+      </span>
     </span>
   );
 }
