@@ -29,7 +29,9 @@ export function HeroSection() {
             Computer Engineering Portfolio
           </p>
           <h1 className="max-w-4xl font-display text-5xl font-semibold leading-[0.92] tracking-[-0.07em] text-text sm:text-6xl lg:text-8xl">
-            Your Name
+            Joshua
+            <br />
+            Periabras
           </h1>
           <div className="mt-6 text-2xl font-medium text-muted sm:text-3xl">
             <span className="text-text">I build as a </span>

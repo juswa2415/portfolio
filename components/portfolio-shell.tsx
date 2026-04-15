@@ -56,7 +56,7 @@ export function PortfolioShell({ children }: PortfolioShellProps) {
             href="#hero"
             className="font-display text-lg font-semibold tracking-[-0.06em] text-text"
           >
-            Your Name
+            Joshua Periabras
           </a>
           <nav aria-label="Primary" className="hidden items-center gap-1 md:flex">
             {navItems.map((item) => (

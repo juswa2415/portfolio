@@ -25,21 +25,21 @@ const siteUrl = "https://your-portfolio.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Your Name | Computer Engineering Portfolio",
+  title: "Joshua Periabras | Computer Engineering Portfolio",
   description:
     "Portfolio of a Computer Engineering student building polished software systems for internships and entry-level software engineering roles.",
   openGraph: {
-    title: "Your Name | Computer Engineering Portfolio",
+    title: "Joshua Periabras | Computer Engineering Portfolio",
     description:
       "Computer Engineering student focused on software engineering internships, full-stack development, and systems-oriented projects.",
     url: siteUrl,
-    siteName: "Your Name Portfolio",
+    siteName: "Joshua Periabras Portfolio",
     images: [
       {
         url: "/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "Portfolio preview for Your Name"
+        alt: "Portfolio preview for Joshua Periabras"
       }
     ],
     locale: "en_US",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Your Name | Computer Engineering Portfolio",
+    title: "Joshua Periabras | Computer Engineering Portfolio",
     description:
       "Computer Engineering student targeting software engineering internships and entry-level roles.",
     images: ["/og-image.svg"]

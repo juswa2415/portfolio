@@ -29,7 +29,7 @@ The static output is generated in `out/`.
 
 ## Personalization checklist
 
-- Replace `Your Name` and contact links in `lib/data.ts`.
+- Replace any remaining name text and site links if you want different branding.
 - Replace `https://your-portfolio.vercel.app` in `app/layout.tsx`, `app/robots.ts`, and `app/sitemap.ts`.
 - Replace `public/resume.pdf` with your actual resume.
 - Replace the images in `public/images/` and `public/og-image.svg` if you want project-specific artwork.

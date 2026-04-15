@@ -69,7 +69,7 @@ export const projects = [
 ];
 
 export const contactLinks = {
-  email: "youremail@example.com",
-  github: "https://github.com/yourusername",
-  linkedin: "https://www.linkedin.com/in/yourusername/"
+  email: "periabras.joshua.garo@gmail.com",
+  github: "https://github.com/juswa2415",
+  linkedin: "https://www.linkedin.com/in/joshua-periabras-0721082a7"
 };
