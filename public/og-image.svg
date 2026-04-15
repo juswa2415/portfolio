@@ -1,0 +1,12 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0F1117"/>
+  <circle cx="980" cy="96" r="220" fill="#F5A623" fill-opacity="0.12"/>
+  <circle cx="180" cy="560" r="200" fill="#F5A623" fill-opacity="0.08"/>
+  <rect x="54" y="54" width="1092" height="522" rx="32" fill="#171B24" stroke="#404754"/>
+  <text x="110" y="184" fill="#F5A623" font-family="monospace" font-size="24" letter-spacing="5">COMPUTER ENGINEERING PORTFOLIO</text>
+  <text x="110" y="300" fill="#F5F1EA" font-family="sans-serif" font-size="82" font-weight="700">Your Name</text>
+  <text x="110" y="376" fill="#F5F1EA" font-family="sans-serif" font-size="40">Software Engineer • Problem Solver • CE Student</text>
+  <text x="110" y="464" fill="#A4AAB6" font-family="sans-serif" font-size="28">Building internship-ready products with refined UX and solid engineering fundamentals.</text>
+  <rect x="110" y="506" width="330" height="50" rx="25" fill="#F5A623"/>
+  <text x="150" y="539" fill="#0F1117" font-family="sans-serif" font-size="24" font-weight="700">Open to Summer 2026 Internships</text>
+</svg>

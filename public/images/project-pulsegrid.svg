@@ -1,0 +1,33 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" rx="36" fill="#11141C"/>
+  <rect x="56" y="56" width="1488" height="888" rx="28" fill="#171B24" stroke="#3F4654"/>
+  <rect x="104" y="104" width="388" height="180" rx="24" fill="#0F1117" stroke="#F5A623" stroke-opacity="0.55"/>
+  <text x="136" y="156" fill="#F5A623" font-family="monospace" font-size="28" letter-spacing="2">PULSEGRID</text>
+  <text x="136" y="216" fill="#F5F1EA" font-family="sans-serif" font-size="56" font-weight="700">24.6°C</text>
+  <text x="136" y="252" fill="#A4AAB6" font-family="sans-serif" font-size="26">North Lab Temperature</text>
+  <rect x="528" y="104" width="408" height="180" rx="24" fill="#0F1117" stroke="#3F4654"/>
+  <text x="560" y="156" fill="#A4AAB6" font-family="monospace" font-size="26">Humidity</text>
+  <path d="M572 235C630 168 704 176 760 221C816 266 874 265 904 224" stroke="#F5A623" stroke-width="10" stroke-linecap="round"/>
+  <rect x="972" y="104" width="468" height="180" rx="24" fill="#0F1117" stroke="#3F4654"/>
+  <text x="1004" y="156" fill="#A4AAB6" font-family="monospace" font-size="26">Alert Feed</text>
+  <circle cx="1028" cy="214" r="10" fill="#4BC270"/>
+  <text x="1054" y="223" fill="#F5F1EA" font-family="sans-serif" font-size="24">Motion spike resolved</text>
+  <circle cx="1028" cy="260" r="10" fill="#F5A623"/>
+  <text x="1054" y="269" fill="#F5F1EA" font-family="sans-serif" font-size="24">Humidity drift detected</text>
+  <rect x="104" y="332" width="1336" height="512" rx="28" fill="#10131A" stroke="#3F4654"/>
+  <path d="M156 720C242 646 318 612 410 592C502 572 560 620 640 564C720 508 786 430 866 420C946 410 1026 482 1112 474C1198 466 1284 388 1388 432" stroke="#F5A623" stroke-width="12" stroke-linecap="round"/>
+  <path d="M156 640C220 658 286 690 358 676C430 662 500 596 584 622C668 648 746 760 820 744C894 728 960 588 1042 596C1124 604 1220 740 1388 700" stroke="#C9D1D9" stroke-opacity="0.3" stroke-width="8" stroke-linecap="round"/>
+  <g opacity="0.22" stroke="#3F4654">
+    <line x1="156" y1="420" x2="156" y2="808"/>
+    <line x1="356" y1="420" x2="356" y2="808"/>
+    <line x1="556" y1="420" x2="556" y2="808"/>
+    <line x1="756" y1="420" x2="756" y2="808"/>
+    <line x1="956" y1="420" x2="956" y2="808"/>
+    <line x1="1156" y1="420" x2="1156" y2="808"/>
+    <line x1="1356" y1="420" x2="1356" y2="808"/>
+    <line x1="156" y1="420" x2="1388" y2="420"/>
+    <line x1="156" y1="548" x2="1388" y2="548"/>
+    <line x1="156" y1="676" x2="1388" y2="676"/>
+    <line x1="156" y1="804" x2="1388" y2="804"/>
+  </g>
+</svg>

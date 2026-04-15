@@ -1,0 +1,30 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" rx="36" fill="#11141C"/>
+  <rect x="72" y="72" width="1456" height="856" rx="30" fill="#151922" stroke="#404754"/>
+  <rect x="120" y="120" width="700" height="760" rx="26" fill="#0C0F15" stroke="#343A47"/>
+  <circle cx="162" cy="164" r="10" fill="#F15B5B"/>
+  <circle cx="196" cy="164" r="10" fill="#F5A623"/>
+  <circle cx="230" cy="164" r="10" fill="#4BC270"/>
+  <text x="156" y="232" fill="#F5A623" font-family="monospace" font-size="28">$ patchnote release --from v1.2.0</text>
+  <text x="156" y="304" fill="#F5F1EA" font-family="monospace" font-size="34">Scanning commits...</text>
+  <text x="156" y="362" fill="#4BC270" font-family="monospace" font-size="30">✓ 18 commits grouped by type</text>
+  <text x="156" y="420" fill="#A4AAB6" font-family="monospace" font-size="28">feat: 6</text>
+  <text x="156" y="468" fill="#A4AAB6" font-family="monospace" font-size="28">fix: 8</text>
+  <text x="156" y="516" fill="#A4AAB6" font-family="monospace" font-size="28">docs: 2</text>
+  <text x="156" y="564" fill="#A4AAB6" font-family="monospace" font-size="28">refactor: 2</text>
+  <rect x="156" y="632" width="628" height="168" rx="18" fill="#141924" stroke="#F5A623" stroke-opacity="0.45"/>
+  <text x="188" y="684" fill="#F5A623" font-family="monospace" font-size="22">Generated release notes preview</text>
+  <text x="188" y="736" fill="#F5F1EA" font-family="sans-serif" font-size="28">Features, fixes, and developer-facing changes</text>
+  <text x="188" y="774" fill="#A4AAB6" font-family="sans-serif" font-size="24">ready for GitHub Releases and CHANGELOG.md</text>
+  <rect x="860" y="120" width="548" height="760" rx="26" fill="#171B24" stroke="#404754"/>
+  <text x="904" y="190" fill="#F5A623" font-family="monospace" font-size="24">RELEASE SUMMARY</text>
+  <rect x="904" y="232" width="460" height="112" rx="18" fill="#0F1117"/>
+  <text x="936" y="282" fill="#F5F1EA" font-family="sans-serif" font-size="30" font-weight="700">v1.3.0</text>
+  <text x="936" y="316" fill="#A4AAB6" font-family="sans-serif" font-size="22">Generated from conventional commits</text>
+  <rect x="904" y="384" width="460" height="88" rx="18" fill="#10151D"/>
+  <rect x="904" y="496" width="460" height="88" rx="18" fill="#10151D"/>
+  <rect x="904" y="608" width="460" height="88" rx="18" fill="#10151D"/>
+  <text x="936" y="437" fill="#F5F1EA" font-family="sans-serif" font-size="24">Features</text>
+  <text x="936" y="549" fill="#F5F1EA" font-family="sans-serif" font-size="24">Fixes</text>
+  <text x="936" y="661" fill="#F5F1EA" font-family="sans-serif" font-size="24">Developer Experience</text>
+</svg>
