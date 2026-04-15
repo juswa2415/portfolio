@@ -68,18 +68,18 @@ export const projects = [
     stack: ["React", "TypeScript", "Node.js", "Billing", "Field Ops"],
     githubUrl: "https://github.com/juswa2415/nha-water-billing.git",
     liveUrl: "",
-    image: "/images/project-patchnote.svg",
+    image: "/images/project-nha-water-billing.png",
     alt: "NHA Water Billing dashboard for community billing and payment tracking"
   },
   {
-    title: "FamilyVault",
+    title: "Credix",
     description:
       "Created a private credential and account management tool intended for local family use, focused on organizing shared emails and passwords in one place while keeping deployment scope intentionally limited for safety.",
     stack: ["Next.js", "TypeScript", "Local-first", "Credential Management"],
-    githubUrl: "https://github.com/juswa2415/familyvault.git",
+    githubUrl: "https://github.com/juswa2415/credix.git",
     liveUrl: "",
-    image: "/images/project-pulsegrid.svg",
-    alt: "FamilyVault local credential management interface for household accounts"
+    image: "/images/project-credix.png",
+    alt: "Credix local credential management interface for household accounts"
   }
 ];
 
