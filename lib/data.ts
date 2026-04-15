@@ -12,7 +12,7 @@ export const heroRoles = [
 ];
 
 export const profileSnapshot = {
-  projectCount: 4,
+  projectCount: 5,
   internshipFocus: "SWE"
 };
 
@@ -48,18 +48,38 @@ export const projects = [
     stack: ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Auth.js", "Recharts"],
     githubUrl: "https://github.com/juswa2415/fintrack",
     liveUrl: "",
-    image: "/images/project-pulsegrid.svg",
+    image: "/images/project-fintrack.png",
     alt: "FinTrack personal finance dashboard interface"
   },
   {
     title: "BrewPOS",
     description:
-      "Designed a coffee shop POS system that goes beyond order-taking by connecting checkout flows with inventory tracking and back-office operations. It is positioned as an operations-focused tool for managing stock visibility, sales activity, and day-to-day cafe workflows from a single system.",
-    stack: ["POS", "Inventory", "Operations"],
-    githubUrl: "",
+      "Built a cafe-focused POS platform that ties cashier workflows to inventory and operational tracking so owners can monitor orders, stock movement, and day-to-day service from one dashboard.",
+    stack: ["Next.js", "TypeScript", "Tailwind CSS", "POS", "Inventory"],
+    githubUrl: "https://github.com/juswa2415/BrewPOS.git",
     liveUrl: "",
-    image: "/images/project-lablane.svg",
+    image: "/images/project-brewpos.png",
     alt: "BrewPOS coffee shop point-of-sale and inventory management interface"
+  },
+  {
+    title: "NHA Water Billing",
+    description:
+      "Developed a community water billing system to replace manual pen-and-paper workflows with digital billing records, payment tracking, and resident account management. The project includes a desktop-first workflow and a mobile simulation for field staff operations.",
+    stack: ["React", "TypeScript", "Node.js", "Billing", "Field Ops"],
+    githubUrl: "https://github.com/juswa2415/nha-water-billing.git",
+    liveUrl: "",
+    image: "/images/project-patchnote.svg",
+    alt: "NHA Water Billing dashboard for community billing and payment tracking"
+  },
+  {
+    title: "FamilyVault",
+    description:
+      "Created a private credential and account management tool intended for local family use, focused on organizing shared emails and passwords in one place while keeping deployment scope intentionally limited for safety.",
+    stack: ["Next.js", "TypeScript", "Local-first", "Credential Management"],
+    githubUrl: "https://github.com/juswa2415/familyvault.git",
+    liveUrl: "",
+    image: "/images/project-pulsegrid.svg",
+    alt: "FamilyVault local credential management interface for household accounts"
   }
 ];
 

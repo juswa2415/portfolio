@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Menu, MoonStar, SunMedium, X } from "lucide-react";
+import { ChevronUp, Menu, MoonStar, SunMedium, X } from "lucide-react";
 import { navItems } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { useTheme } from "@/components/theme-provider";
@@ -13,6 +13,7 @@ type PortfolioShellProps = {
 export function PortfolioShell({ children }: PortfolioShellProps) {
   const [activeSection, setActiveSection] = useState("about");
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
   const { theme, toggleTheme } = useTheme();
 
   useEffect(() => {
@@ -76,6 +77,22 @@ export function PortfolioShell({ children }: PortfolioShellProps) {
       document.body.style.overflow = "";
     };
   }, [mobileOpen]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 420);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <div className="relative overflow-x-clip">
@@ -175,6 +192,17 @@ export function PortfolioShell({ children }: PortfolioShellProps) {
       </aside>
 
       <main>{children}</main>
+      <button
+        type="button"
+        aria-label="Back to top"
+        onClick={scrollToTop}
+        className={cn(
+          "fixed bottom-6 right-6 z-40 inline-flex h-12 w-12 items-center justify-center rounded-full border border-border/70 bg-surface/90 text-text shadow-amber transition-all duration-300 hover:border-accent/80 hover:text-accent",
+          showScrollTop ? "translate-y-0 opacity-100" : "pointer-events-none translate-y-6 opacity-0"
+        )}
+      >
+        <ChevronUp className="h-5 w-5" />
+      </button>
     </div>
   );
 }

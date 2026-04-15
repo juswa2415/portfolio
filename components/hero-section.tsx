@@ -11,10 +11,10 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-screen items-center overflow-hidden pt-28"
+      className="relative flex min-h-screen items-center overflow-hidden pt-24"
       aria-label="Hero"
     >
-      <div className="container-shell relative z-10 grid gap-14 pb-16 pt-12 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-end lg:pb-24">
+      <div className="container-shell relative z-10 grid gap-14 pb-16 pt-8 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-end lg:pb-24">
         <motion.div
           initial={reducedMotion ? false : { opacity: 0, y: 28 }}
           animate={reducedMotion ? {} : { opacity: 1, y: 0 }}
