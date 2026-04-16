@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { ChevronUp, Menu, MoonStar, SunMedium, X } from "lucide-react";
+import Image from "next/image";
 import { navItems } from "@/lib/data";
 import { cn } from "@/lib/utils";
 import { useTheme } from "@/components/theme-provider";
@@ -98,12 +99,13 @@ export function PortfolioShell({ children }: PortfolioShellProps) {
     <div className="relative overflow-x-clip">
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border/50 bg-bg/70 backdrop-blur-md">
         <div className="container-shell flex h-20 items-center justify-between gap-4">
-          <a
-            href="#hero"
-            className="font-display text-lg font-semibold tracking-[-0.06em] text-text"
+          <button
+            type="button"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="font-display text-lg font-semibold tracking-[-0.06em] text-text hover:text-accent transition-colors duration-300"
           >
-            Joshua Periabras
-          </a>
+            Joshua P.
+          </button>
           <nav aria-label="Primary" className="hidden items-center gap-1 md:flex">
             {navItems.map((item) => (
               <a
@@ -126,14 +128,7 @@ export function PortfolioShell({ children }: PortfolioShellProps) {
           </nav>
           <div className="hidden items-center gap-3 md:flex">
             <ThemeToggle theme={theme} onToggle={toggleTheme} />
-            <a
-              href="/resume.pdf"
-              download
-              className="rounded-full border border-accent/70 bg-accent px-5 py-2.5 text-sm font-semibold text-slate-950 shadow-amber"
-            >
-              Download Resume
-            </a>
-          </div>
+                      </div>
           <div className="flex items-center gap-2 md:hidden">
             <ThemeToggle theme={theme} onToggle={toggleTheme} />
             <button
@@ -184,7 +179,7 @@ export function PortfolioShell({ children }: PortfolioShellProps) {
             href="/resume.pdf"
             download
             onClick={() => setMobileOpen(false)}
-            className="mt-4 rounded-2xl bg-accent px-4 py-3 text-center text-base font-semibold text-slate-950"
+            className="mt-4 rounded-2xl bg-accent px-4 py-3 text-center text-base font-semibold text-slate-950 transition-all duration-300 hover:scale-[1.03] hover:shadow-lg"
           >
             Download Resume
           </a>

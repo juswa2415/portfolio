@@ -1,7 +1,8 @@
 "use client";
 
 import { motion, useReducedMotion } from "framer-motion";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight, Download, User } from "lucide-react";
+import Image from "next/image";
 import { heroRoles, profileSnapshot } from "@/lib/data";
 import { TypewriterText } from "@/components/ui/typewriter-text";
 
@@ -28,11 +29,30 @@ export function HeroSection() {
           <p className="mb-4 font-mono text-sm uppercase tracking-[0.32em] text-accent">
             Computer Engineering Portfolio
           </p>
-          <h1 className="max-w-4xl font-display text-5xl font-semibold leading-[0.92] tracking-[-0.07em] text-text sm:text-6xl lg:text-8xl">
-            Joshua
-            <br />
-            Periabras
-          </h1>
+          
+          {/* Name and Image container - aligned as flex row */}
+          <div className="flex flex-wrap items-stretch gap-4 max-w-2xl">
+            <h1 className="font-display text-2xl font-semibold leading-[0.92] tracking-[-0.07em] text-text sm:text-6xl lg:text-8xl">
+              Joshua
+              <br />
+              Periabras
+            </h1>
+            <div className="relative flex items-stretch flex-shrink-0">
+              <Image
+                src="/images/profile.png"
+                alt="Profile"
+                width={160}
+                height={160}
+                className="h-full w-auto object-contain"
+                style={{ 
+                  maxHeight: "clamp(120px, 14vw, 180px)",
+                  width: "auto"
+                }}
+                priority
+              />
+            </div>
+          </div>
+
           <div className="mt-6 text-2xl font-medium text-muted sm:text-3xl">
             <span className="text-text">I build as a </span>
             <span className="text-accent">
@@ -48,7 +68,7 @@ export function HeroSection() {
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
             <a
               href="#projects"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3.5 text-base font-semibold text-slate-950 shadow-amber"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3.5 text-base font-semibold text-slate-950 shadow-amber transition-all duration-300 hover:scale-[1.03] hover:shadow-lg"
             >
               View Projects
               <ArrowRight className="h-4 w-4" />
@@ -56,7 +76,7 @@ export function HeroSection() {
             <a
               href="/resume.pdf"
               download
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-border/80 bg-surface/70 px-6 py-3.5 text-base font-semibold text-text"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-border/80 bg-surface/70 px-6 py-3.5 text-base font-semibold text-text transition-all duration-300 hover:border-accent/70 hover:text-accent hover:scale-[1.03]"
             >
               <Download className="h-4 w-4" />
               Download Resume
@@ -99,7 +119,7 @@ export function HeroSection() {
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4 pt-4">
-                <Metric label="Projects Shipped" value={`0${profileSnapshot.projectCount}`} />
+                <Metric label="Projects Built" value={`0${profileSnapshot.projectCount}`} />
                 <Metric label="Internship Focus" value={profileSnapshot.internshipFocus} />
               </div>
             </div>

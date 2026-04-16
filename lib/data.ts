@@ -12,7 +12,7 @@ export const heroRoles = [
 ];
 
 export const profileSnapshot = {
-  projectCount: 5,
+  projectCount: 4,
   internshipFocus: "SWE"
 };
 
@@ -68,17 +68,17 @@ export const projects = [
     stack: ["React", "TypeScript", "Node.js", "Billing", "Field Ops"],
     githubUrl: "https://github.com/juswa2415/nha-water-billing.git",
     liveUrl: "",
-    image: "C:\Users\peria\Downloads\projects\nha-water-billing\sample-data\nha_pic.png",
+    image: "/images/project-nha-water-billing.png",
     alt: "NHA Water Billing dashboard for community billing and payment tracking"
   },
   {
     title: "Credix",
     description:
-      "Created a private credential and account management tool intended for local family use, focused on organizing shared emails and passwords in one place while keeping deployment scope intentionally limited for safety.",
-    stack: ["Next.js", "TypeScript", "Local-first", "Credential Management"],
+      "Credix is a secure credential and account management web application that enables users to store, organize, and manage login information efficiently within a centralized system.",
+    stack: ["Next.js", "TypeScript", "Encryption", "OAuth", "Secure-by-design"],
     githubUrl: "https://github.com/juswa2415/credix.git",
     liveUrl: "",
-    image: "C:\Users\peria\Downloads\projects\Credix\Credix_pic.png",
+    image: "/images/project-credix.png",
     alt: "Credix local credential management interface for household accounts"
   }
 ];

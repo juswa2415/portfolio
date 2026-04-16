@@ -45,10 +45,10 @@ export function ContactSection() {
                   <button
                     type="button"
                     onClick={handleCopy}
-                    className="inline-flex items-center gap-2 rounded-full border border-border/70 bg-surface/70 px-4 py-2 text-sm font-medium text-text"
+                    className="inline-flex items-center justify-center w-8 h-8 rounded-full border border-border/70 bg-surface/70 text-text hover:border-accent/70 hover:text-accent"
+                    title={copied ? "Copied!" : "Copy email"}
                   >
-                    {copied ? <Check className="h-4 w-4 text-success" /> : <Copy className="h-4 w-4" />}
-                    {copied ? "Copied" : "Copy Email"}
+                    {copied ? <Check className="h-3.5 w-3.5 text-success" /> : <Copy className="h-3.5 w-3.5" />}
                   </button>
                 </div>
                 <div className="flex flex-wrap gap-3">
