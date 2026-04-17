@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans, JetBrains_Mono, Syne } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import { Footer } from "@/components/footer";
 
 const syne = Syne({
   subsets: ["latin"],
@@ -65,6 +66,7 @@ export default function RootLayout({
         className={`${syne.variable} ${dmSans.variable} ${jetbrainsMono.variable} bg-bg font-sans text-text antialiased`}
       >
         <ThemeProvider>{children}</ThemeProvider>
+        <Footer />
       </body>
     </html>
   );

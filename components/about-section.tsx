@@ -19,12 +19,11 @@ export function AboutSection() {
           <div className="surface-card rounded-[2rem] p-6">
             <p className="font-mono text-xs uppercase tracking-[0.3em] text-muted">Currently building</p>
             <p className="mt-4 font-display text-2xl tracking-[-0.05em] text-text">
-              A low-latency campus shuttle tracker using WebSockets, map clustering, and ETA
-              prediction.
+              A production-ready, scalable web-based Property Management System for small landlords.
             </p>
             <p className="mt-4 text-base leading-7 text-muted">
-              Combining real-time transport data with a student-friendly interface to practice
-              state synchronization, API design, and deployment discipline.
+              Building comprehensive tenant management, maintenance tracking, and financial reporting
+              tools to streamline property operations and improve landlord-tenant communication.
             </p>
           </div>
           <div className="surface-card rounded-[2rem] p-6">
